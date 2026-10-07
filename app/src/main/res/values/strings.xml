@@ -1,0 +1,28 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">CountryGame</string>
+
+    <!-- Buttons -->
+    <string name="Game_Button">Play Game</string>
+    <string name="About_Button">About</string>
+    <string name="Home_Button">Home</string>
+    <string name="Guess_The_Country_Button">Guess The Country</string>
+    <string name="Guess_Hints_Button">Guess-Hints</string>
+    <string name="Guess_The_Flag_Button">Guess The Flag</string>
+    <string name="Advanced_Level_Button">Advanced Level</string>
+
+    <!-- Student Information -->
+    <string name="Student_No">B00986542</string>
+    <string name="Student_Name">Ronan Kelly</string>
+    <string name="plagiarism_Statement">I confirm that I understand what plagiarism is and have read the University’s policy on plagiarism and understand the definition of plagiarism. The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged. I understand that I may face sanctions in accordance with the policies and procedures of the University </string>
+
+    <!-- Page Banners -->
+    <string name="Menu_Banner">Country Game</string>
+    <string name="About_Banner">Student About Page</string>
+    <string name="Guess_The_Country_Banner">Guess The Country</string>
+    <string name="Guess_Hints_Banner">Guess The FLag</string>
+    <string name="Guess_The_Flag_Banner">Guess The Flag</string>
+    <string name="Advanced_Level_Banner">Advanced Level</string>
+
+
+</resources>
