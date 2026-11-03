@@ -5,36 +5,149 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuessTheCountry">
+    tools:context=".GuessTheCountry"
+    android:background="@drawable/background"
+    >
+
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="529dp"
-        android:background="#061222"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:background="#597559"
         android:gravity="center"
         android:text="@string/Guess_The_Country_Banner"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/home_button"
-        android:layout_width="117dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="53dp"
-        android:backgroundTint="#061222"
+        android:layout_width="147dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#83a879"
+        android:insetTop="0dp"
         android:text="@string/Home_Button"
+        app:cornerRadius="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_spinner"
+        app:layout_constraintVertical_bias="0.734"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="410dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="72dp"
+        android:background="#004CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/country_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Spinner
+        android:id="@+id/country_spinner"
+        android:layout_width="389dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="348dp"
+        android:entries="@array/countries_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+
+        android:id="@+id/guess_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#83a879"
+        android:insetTop="0dp"
+        android:text="@string/Guess_Button"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/next_flag_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_spinner"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/next_flag_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#83a879"
+        android:insetTop="0dp"
+        android:text="@string/Next_Flag"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_spinner"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="156dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="7dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_spinner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Score: 0"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flagImage">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/correct_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct answer: "
+        android:textColor="#26B3FF"
+        app:layout_constraintBottom_toTopOf="@+id/country_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="flags">
+        <item>@drawable/flag_algeria</item>
+        <item>@drawable/flag_australia</item>
+        <item>@drawable/flag_belgium</item>
+        <item>@drawable/flag_brazil</item>
+        <item>@drawable/flag_canada</item>
+        <item>@drawable/flag_colombia</item>
+        <item>@drawable/flag_croatia</item>
+    </array>
+</resources>

@@ -10,6 +10,9 @@
     <string name="Guess_Hints_Button">Guess-Hints</string>
     <string name="Guess_The_Flag_Button">Guess The Flag</string>
     <string name="Advanced_Level_Button">Advanced Level</string>
+    <string name="First_Frag_Button">First Fragment</string>
+    <string name="Second_Frag_Button">Second Fragment</string>
+
 
     <!-- Student Information -->
     <string name="Student_No">B00986542</string>
@@ -23,6 +26,40 @@
     <string name="Guess_Hints_Banner">Guess The FLag</string>
     <string name="Guess_The_Flag_Banner">Guess The Flag</string>
     <string name="Advanced_Level_Banner">Advanced Level</string>
+
+
+    <string-array name="countries_dropdown">
+
+        <item>Algeria</item>
+        <item>Australia</item>
+        <item>Belgium</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>Colombia</item>
+        <item>Croatia</item>
+        <item>Denmark</item>
+        <item>Egypt</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Portugal</item>
+        <item>Singapore</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Turkey</item>
+        <item>Ukraine</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+
+    <string name="Guess_Button">Guess</string>
+    <string name="Next_Flag">Next Flag</string>
+    <string name="Submit_Button">Submit</string>
+    <string name="Guess_Hints_Text">Chose a letter to guess</string>
+    <string name="Result_Text">Guess Result</string>
+    <string name="Question_Text">Guess the flag of:</string>
 
 
 </resources>

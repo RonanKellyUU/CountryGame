@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutMenu">
+    tools:context=".AboutMenu"
+    android:background="@drawable/background"
+    >
 
     <TextView
         android:id="@+id/Student_No"
@@ -27,17 +29,19 @@
         android:layout_width="117dp"
         android:layout_height="62dp"
         android:layout_marginBottom="25dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#83a879"
         android:text="@string/Home_Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="416dp"
         android:layout_height="87dp"
-        android:background="#061222"
+        android:background="#597559"
         android:gravity="center"
         android:text="@string/About_Banner"
         android:textAlignment="center"

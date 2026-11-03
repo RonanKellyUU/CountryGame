@@ -6,13 +6,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameMenu">
+    tools:context=".GameMenu"
+    android:background="@drawable/background"
+    >
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="94dp"
-        android:background="#061222"
+        android:background="#83a879"
         android:gravity="center"
         android:text="@string/Menu_Banner"
         android:textColor="#FFFFFF"
@@ -26,61 +29,76 @@
         android:id="@+id/guess_the_country_button"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#83a879"
         android:text="@string/Guess_The_Country_Button"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintBottom_toTopOf="@id/guess_hints_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_chainStyle="spread"
+        app:cornerRadius="16dp"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/guess_hints_button"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#83a879"
         android:text="@string/Guess_Hints_Button"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/guess_the_country_button"
         app:layout_constraintBottom_toTopOf="@+id/guess_the_flag_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="16dp"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/guess_the_flag_button"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#83a879"
         android:text="@string/Guess_The_Flag_Button"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/guess_hints_button"
         app:layout_constraintBottom_toTopOf="@id/advanced_level_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="16dp"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/advanced_level_button"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#83a879"
         android:text="@string/Advanced_Level_Button"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@+id/guess_the_flag_button"
         app:layout_constraintBottom_toTopOf="@id/home_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="16dp"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/home_button"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:backgroundTint="#061222"
+        android:backgroundTint="#9CB89B"
         android:text="@string/Home_Button"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/advanced_level_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="16dp"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

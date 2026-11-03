@@ -5,36 +5,119 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuessTheCountry">
+    tools:context=".GuessTheCountry"
+    android:background="@drawable/background"
+    >
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="529dp"
-        android:background="#061222"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:background="#597559"
         android:gravity="center"
-        android:text="@string/Guess_Hints_Button"
+        android:text="@string/Guess_The_Country_Banner"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/home_button"
-        android:layout_width="117dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="52dp"
-        android:backgroundTint="#061222"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#83a879"
         android:text="@string/Home_Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/Result_Text"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
 
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="362dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toTopOf="@+id/hidden_country_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText"
+        app:layout_constraintVertical_bias="0.523"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/hidden_country_text"
+        android:layout_width="402dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText" />
+
+    <EditText
+        android:id="@+id/letter_input"
+        android:layout_width="240dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter a letter"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/submit_button"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="#83a879"
+        android:text="@string/Submit_Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hidden_country_text"
+        app:strokeColor="#597559"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/Result_Text"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Result_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letter_input" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hidden_country_text">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="214dp"
+        android:text="Score:"
+        app:layout_constraintBottom_toTopOf="@+id/hidden_country_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

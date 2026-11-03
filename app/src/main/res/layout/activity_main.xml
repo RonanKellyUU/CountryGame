@@ -5,45 +5,75 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="416dp"
-        android:layout_height="87dp"
-        android:background="#061222"
-        android:gravity="center"
-        android:text="@string/About_Banner"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
         android:id="@+id/game_button"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#061222"
+        android:layout_width="352dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#83a879"
+        android:insetTop="0dp"
         android:text="@string/Game_Button"
+        app:cornerRadius="14dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/about_button"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="150dp"
-        android:backgroundTint="#061222"
+        android:layout_width="310dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9CB89B"
         android:text="@string/About_Button"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_button"
+        app:strokeColor="#597559"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/Guess_The_Country_Banner"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/game_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Your Knowledge"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/game_button" />
+        app:layout_constraintTop_toBottomOf="@+id/about_button"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="262dp"
+        android:layout_height="212dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:srcCompat="@drawable/globe" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
